@@ -1,0 +1,130 @@
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cart Item */
+.itemCard {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  transition: 0.3s ease;
+}
+
+.itemCard:hover {
+  background-color: #f0f0f0;
+}
+
+/* Left: Name + Price */
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 0.3rem;
+}
+
+/* Middle: + / - / quantity */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.controls span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Right: Total per item */
+.totalPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Buttons */
+.button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.remove {
+  background-color: #4d1601
+}
+
+.remove:hover {
+  background-color:  #cd4712;
+}
+
+/* Total Section */
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  padding-top: 1rem;
+}
+
+/* Bottom Action Buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button--alt {
+border:none;
+color: brown;
+font-weight: bold;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.button--alt:hover {
+  color:rgb(196, 49, 49)
+}
