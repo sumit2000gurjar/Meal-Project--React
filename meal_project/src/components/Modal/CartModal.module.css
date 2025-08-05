@@ -128,3 +128,26 @@ cursor: pointer;
 .button--alt:hover {
   color:rgb(196, 49, 49)
 }
+
+.imgurl{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.adressForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.adressForm form input {
+  width: 50%;      /* Half width */
+  min-width: 180px;
+  max-width: 300px;
+  align-self: flex-start; /* Left align */
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

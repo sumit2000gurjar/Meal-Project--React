@@ -6,7 +6,8 @@ const MealItem = (props) => {
   const value = useContext(CardContext);
   const [quantity, setQuantity] = useState(1);
   const [showNotification, setShowNotification] = useState(false);
-  const price = `$${props.price.toFixed(2)}`;
+  const price = `$${props.price.toFixed(2)}`
+  console.log("MealItem props: ", props.imageurl);
   const quantityChangeHandler = (event) => {
     setQuantity(event.target.value);
   };
@@ -17,6 +18,7 @@ const MealItem = (props) => {
       description: props.description,
       price: props.price,
       quantity: Number(qty),
+      imageurl: props.imageurl,
     };
 
     value.addItem(item); // yahi data context me jaayega
@@ -31,6 +33,7 @@ const MealItem = (props) => {
     // ✅ Reset quantity to 1
     setQuantity(1);
   };
+   
 
   return (
     <li
@@ -43,6 +46,7 @@ const MealItem = (props) => {
     >
       <div>
         <h3>{props.name}</h3>
+          <img src={props.imageurl} alt={props.name} className={classes.imgurl} />
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
