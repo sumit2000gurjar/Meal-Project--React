@@ -7,9 +7,9 @@ const cartReducer = (state, action) => {
   // ✅ Add Item
   if (action.type === 'Add_Item') {
     const existingItemIndex = state.items.findIndex(item => item.id === action.item.id);
-    console.log("existingItemIndex",existingItemIndex);
+    // console.log("existingItemIndex",existingItemIndex);
     const existingItem = state.items[existingItemIndex];
-    console.log("existingItem",existingItem)
+    // console.log("existingItem",existingItem)
     let updatedItems;
 
     if (existingItem) {

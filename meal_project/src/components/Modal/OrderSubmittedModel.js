@@ -17,7 +17,7 @@ const OrderSubmittedModel = ({onClose ,setIsFormSubmitted}) => {
     <>
       <h1>Order Submitted Successfully!</h1>
       <p>Thank you for your order</p>
-      <button   className={styles.button} onClick={onOrderClose}>Close</button>
+      <button   className={styles.button} onClick={onOrderClose}>OK</button>
     </>
   </div>
   

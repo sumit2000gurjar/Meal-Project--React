@@ -72,7 +72,7 @@ export default function CartModal({ onClose }) {
           <div style={{ textAlign: "center", padding: "2rem" }}>
             <h2>Please add some item in cart</h2>
             <button className={classes.button} onClick={onClose}>
-              Close
+              OK
             </button>
           </div>
         ) : (
